@@ -14,7 +14,7 @@ def encrypt(email="abc012"):
     """
     output = ""
     len_flag = len(email) != 6
-    anum_flag = email[:3] != 'abc' or not email[3:].isdigit()
+    anum_flag = email[:3] != 'abc' or not email[3:].isdigit() # TODO - consider regular exp
 
     if len_flag:
         output = "Length check failed\n"
